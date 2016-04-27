@@ -1,4 +1,15 @@
 {
-    
+    "Leaders":[
+        {
+            "firstName":"Troy",
+            "lastName":"Dinkel",
+            "highestScore":60
+        },
+        {
+            "firstName":"Dank",
+            "lastName":"Dankel",
+            "highestScore":69
+        }
+    ]
     
 }

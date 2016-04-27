@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : Feb 18, 2016, 7:01:28 PM
-    Author     : Troy
+    Author     : Troy Dinkel
 --%>
 
 <%@page import="edu.pitt.is1017.spaceinvaders.User"%>
@@ -18,7 +18,6 @@
                 background-image: url(http://wallpapercave.com/wp/pEeUsp1.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
-
             }
             h1{
                 font-family: candara;
@@ -76,6 +75,7 @@
 
             if (!email.equals("") && !password.equals("")) {
                 user = new User(email, password);
+                out.println("<script>alert('successfull');</script>");
                 response.sendRedirect("game.jsp");
 
             } else {

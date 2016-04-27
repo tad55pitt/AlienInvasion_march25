@@ -58,7 +58,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                background-image: url(http://wallpapercave.com/wp/pEeUsp1.jpg);\n");
       out.write("                background-size: cover;\n");
       out.write("                background-repeat: no-repeat;\n");
-      out.write("\n");
       out.write("            }\n");
       out.write("            h1{\n");
       out.write("                font-family: candara;\n");
@@ -70,7 +69,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            }\n");
       out.write("            form{\n");
       out.write("                text-align: center;\n");
-      out.write("                margin-bottom: 40px;\n");
+      out.write("                margin: auto;\n");
       out.write("                background-color: black;\n");
       out.write("                border: 4px solid red;\n");
       out.write("                border-radius: 10px 10px 10px 10px;\n");
@@ -117,6 +116,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
             if (!email.equals("") && !password.equals("")) {
                 user = new User(email, password);
+                out.println("<script>alert('successfull');</script>");
                 response.sendRedirect("game.jsp");
 
             } else {

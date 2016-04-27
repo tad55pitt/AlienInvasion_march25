@@ -18,10 +18,7 @@ public class User
 
 
 
-	public static void main(String[] args)
-	{
-
-	}
+	
 
 	public User(int userID)
 	{
@@ -57,16 +54,13 @@ public class User
 		try{
 			ResultSet rs = db.getResultSet(sql);
 			if(rs.next()){
-				System.out.println("TRUE");
 				this.loggedIn = true;
-				JOptionPane.showMessageDialog(null, "Login Successful");
 				this.firstName=firstName;
 				this.lastName=lastName;
 				this.email=email;
 				this.password=password;	
 			}
 			else{
-				System.out.println("FALSE");
 				this.loggedIn = false;	
 				JOptionPane.showMessageDialog(null, "Invalid email or password");
 

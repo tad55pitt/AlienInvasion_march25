@@ -1,7 +1,7 @@
 <%-- 
     Document   : Registration
     Created on : Mar 3, 2016, 6:40:34 PM
-    Author     : Troy
+    Author     : Troy Dinkel
 --%>
 
 <%@page import="edu.pitt.is1017.spaceinvaders.User"%>
@@ -18,7 +18,6 @@
                 background-image: url(http://wallpapercave.com/wp/pEeUsp1.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
-
             }
             h1{
                 font-family: candara;
